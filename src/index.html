@@ -2,19 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>DL-Rick y Morty</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
+    <div class="container">
+      <div id="RICKANDMORTY">
+      </div>
+    </div> 
+
+    <header>
+      <img src="http://www.imagenonline.com/imagenes/1/1164-746f68750ce566d4bb1bf593e0bc37549bb3ad81.png">
+      <h2>¡Conoce más sobre los personajes de la serie!</h2>
+    </header>  
+    
+    
+    <nav>
+      <select name="name" id="filter-Orden" class="filters">
+        <option value="nameAZ">Orden</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+            
+      <select name="gender" id="filter-Gender" class="filters">
+        <option value="genderAll">Género</option>
+        <option value="">Male</option>
+        <option value="">Female</option>
+        <option value="">Unknown</option>
+        <option value="">Genderless</option>
+      </select>
+        
+      <select name="species" id="filter-Species" class="filters">
+        <option value="speciesAll">Especie</option>
+        <option value="Human">Humano</option>
+        <option value="Alien">Alien</option>
+        <option value="Humanoid">Humanoide</option>
+        <option value="unkwnown">Desconocido</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Mytholog">Mitológico</option>
+        <option value="Animal">Animal</option>
+        <option value="Vampire">Vampiro</option>
+        <option value="Robot">Robot</option>
+        <option value="Cronenberg">Cronenberg</option>
+        <option value="Disease">Enfermedad</option>
+        <option value="Parasite">Parásito</option>
+      </select>
+      
+      </nav>
+
+    <section>
+      <!--Aca colocar las 6 tarjetas con los personajes principales: Rick, Morty, Squanchy, Summer, Beth y Jerry-->
+    </section>  
+
     <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    
+    
+    <footer>2019 Copyright CA Designs</footer>
+
   </body>
 </html>
