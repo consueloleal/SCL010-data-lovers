@@ -1,87 +1,145 @@
 /* Para todas las resoluciones mqueries */
-
-
 *{
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   box-sizing: border-box;
-}  
-body{
-background: #6AD0CE;
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, Sans-serif;
 }
 .container{
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-
-  /*  display: flex;
-  flex-direction: row;*/
-  flex-wrap: wrap;
-}
-header{
-  background: white;
-  width: 100%;
-  padding: 20%;
-  
-  
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}*/
-header .logo img {
-  width: 50%;
-  vertical-align: top;
-}
-header nav{
-  width: 50%;
-
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}   
-h2{
-  line-height: 50px;
-  color: black;
+  flex-flow: column nowrap;
 }
-.filters{
-  background: white;
-  color: gray;
+  .header{
+    background: whitesmoke;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+  }
+          .logo img{
+            background: whitesmoke;
+            flex: 2 1 auto;
+
+          }
+          .texto-principal{
+            background: #6ad0ce;
+            flex: 1 1 auto,
+
+          }
+          .filters{
+            background: whitesmoke;
+            flex: 2 1 auto;
+                   
+          }
+
+  .section{
+    background:#6ad0ce;
+    display: flex;
+   
+  }
+        .items{
+          background: gray;
+          flex: 2 1 auto;
+          display: flex;
+          flex-flow: row wrap;
+        }
+              .tarjetas{
+                background: greenyellow;
+                width: 10%;
+                /*height: 150px;*/
+                flex: 1 1 40%;
+              }
+              .navegation{
+                background: pink;
+                flex: 1 1 100%;
+                align-items: center;
+              }
+  
+  
+        .aside{
+          background: purple;
+          flex: 1 1 auto;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          align-items: center;
+        }
+                .gif{
+                  background: #6ad0ce;
+                  flex: 1 1 auto;
+                  align-items: center;
+                                    
+                }
+                .gif img{
+                  width: 75%;
+                }
+              
+  .footer{
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .pie{
+      background: #6ad0ce;
+      width: 300px;
+        
+    }
+p{
+  color: blue;
+  font-size: 1.1em;
   text-align: center;
-  text-decoration: aqua;
-  padding: 10%;
+}
+h2{
+  color:black;
+  font-size: 0.95em;
+  text-align: left;
+}
+h4{
+  color: gray;
+  font-size: 0.8em;
+  text-align: left;
 
 }
 
-.tarjetas{
-  max-width: 100%;
-  width: 40%;
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: column;
+
+
+@media all and (max-width: 800px){
+  .section{
+    flex-direction: column;
+  }
+  .header{
+    flex-direction: column;
+    height: auto;
+  }
+  .aside{
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width:1024px) and (max-width: 768px){
-  .container { 
-    font-size:100%;}
-    header, header nav, h2, .filters, .tarjetas {
-    width: 50%;}
+@media all and (max-width:600px){
+  .items{
+    flex-direction: column;
+  }
 }
-  
-@media screen and (max-width:768px) and (max-width: 320px) {
-  body {
-    font-size:80%;}
-    .container, header, header nav, h2, .filters, .tarjetas {
-    width: 50%;}
-}
-  
-@media screen and (max-width:320px) {
-  body {
-    font-size: 60%;}
-    .container, header, header nav, h2, .filters, .tarjetas {
-    width: 10%;}
+
+@media all and (max-width:400px){
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo{
+    width: 80%;
+  }
+  .tarjetas{
+    width: 60%;
+  }
+  .aside{
+    flex-direction: column;
+  }
 }
