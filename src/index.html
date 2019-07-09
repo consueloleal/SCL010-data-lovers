@@ -17,7 +17,7 @@
         </div>
         
         <nav class="filters">
-          <select name="name" id="filterOrden">
+          <select name="name" id="filterOrden" class="filters">
             <option value="nameAZ">Orden</option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
@@ -46,6 +46,11 @@
             <option value="Disease">Enfermedad</option>
             <option value="Parasite">Parásito</option>
           </select>
+
+          <select name="calculos" id="calculations" class="filters">
+          <option value="calculo">Cálculos</option>
+          </select>
+
         </nav>
       </header>
 
@@ -59,13 +64,23 @@
           <nav class="navegation"></nav>
         </div>   
         
-        <!--En este box colocaremos un Gif de la serie, para darle movimiento-->
+        <!--En este box colocaremos un Gif de la serie y música (Theme song), para darle movimiento y sonido-->
         <aside class="aside">
           <div class="gif" >
-          <img src="https://media.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif" alt="Gif">
+          <img src="./../multimedia/giphy.gif" alt="Gif">
           <h4>¡Bienvenidos!</h4>
           <h4>Ya puedes conocer más detalles de los personajes de tu serie favorita,</h4>
-          <h4>y seleccionarlos por género, especie y nombre, así que .... a disfrutar!!!</h4>
+          <h4>y hasta ordenarlos alfabéticamente por el nombre (A-Z/Z-A), por el género</h4>
+          <h4>y por su especie, así que .... a disfrutar!!!</h4>
+          <audio src="./../multimedia/Rick-and-Morty-Theme-Song.mp3" preload="none"></audio>
+          <audio controls class="control">
+              <source src="./../multimedia/Rick-and-Morty-Theme-Song.ogg" type="audio/ogg">
+              <source src="./../multimedia/Rick-and-Morty-Theme-Song.mp3" type="audio/mpeg">
+              <source src="./../multimedia/Rick-and-Morty-Theme-Song.wav" type="audio/wav">
+                  <object type="application/x-shockwave-flash" data="player.swf?miArchivo=Rick-and-Morty-Theme-Song.mp3">
+                      <param name="movie" value="player.swf?miArchivo=Rick-and-Morty-Theme-Song.mp3">
+                  </object>
+          </audio controls>
           </div>
         </aside>
         
