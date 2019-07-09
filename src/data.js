@@ -1,10 +1,32 @@
 /* Manejo de data */
+const rymData = RICKANDMORTY.results; 
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+const filterData = (data, condition) => {
+  for (var key in condition) {
+    
+    if (condition[key] === "All")
+      
+      delete condition[key]
+  }
 
-const example = () => {
-  return 'example';
+  return data.filter(function(character) {
+    for (var key in condition) {
+      if (character[key] === undefined || !character[key].includes(condition[key]))
+        return false;
+    }
+    return true;
+  });
 };
 
-window.example = example;
+
+
+const sortData = (data, sortBy, sortOrder) => {};
+
+
+const computeStats = (data) => {
+
+};
+
+window.filterData = filterData;
+window.sortData = sortData;
+window.computeStats = computeStats;
