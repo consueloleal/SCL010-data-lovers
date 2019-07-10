@@ -18,13 +18,13 @@
         
         <nav class="filters">
           <select name="name" id="filterOrden" class="filters">
-            <option value="nameAZ">Orden</option>
-            <option value="A-Z">A-Z</option>
-            <option value="Z-A">Z-A</option>
+            <option value="Normal">Orden</option>
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
           </select>
             
           <select name="gender" id="filterGender" class="filters">
-            <option value="genderAll">Género</option>
+            <option value="All">Género</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Unknown">Unknown</option>
@@ -32,7 +32,7 @@
           </select>
         
           <select name="species" id="filterSpecies" class="filters">
-            <option value="speciesAll">Especie</option>
+            <option value="All">Especie</option>
             <option value="Human">Humano</option>
             <option value="Alien">Alien</option>
             <option value="Humanoid">Humanoide</option>
@@ -53,7 +53,7 @@
 
         </nav>
       </header>
-
+      <div id="stats" class="row"></div>
       <section class="section">
         <!--Aca se colocaran las 6 tarjetas con los personajes principales: Rick, Morty, Squanchy, Summer, Beth y Jerry-->
         <div class="items">
@@ -74,7 +74,7 @@
           <h4>y por su especie, así que .... a disfrutar!!!</h4>
           <audio src="./../multimedia/Rick-and-Morty-Theme-Song.mp3" preload="none"></audio>
           <audio controls class="control">
-              <source src="./../multimedia/Rick-and-Morty-Theme-Song.ogg" type="audio/ogg">
+              <!-- <source src="./../multimedia/Rick-and-Morty-Theme-Song.ogg" type="audio/ogg"> -->
               <source src="./../multimedia/Rick-and-Morty-Theme-Song.mp3" type="audio/mpeg">
               <source src="./../multimedia/Rick-and-Morty-Theme-Song.wav" type="audio/wav">
                   <object type="application/x-shockwave-flash" data="player.swf?miArchivo=Rick-and-Morty-Theme-Song.mp3">
