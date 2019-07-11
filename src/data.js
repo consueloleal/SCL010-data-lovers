@@ -1,4 +1,5 @@
-/* Manejo de data */
+/* Manejo de data */ 
+
 const filterData = (data, condition) => {
   for (var key in condition) {
 
@@ -37,9 +38,9 @@ const sortData = (data, sortBy, sortOrder) => {
 };
 
 const computeStats = (data) => {
-  representation_percentage = (data.length * 100 / rymData.length).toFixed(0)
+  let representation_percentage = (data.length * 100 / rymData.length).toFixed(0)
 
-  return { Representación_de_población_total: representation_percentage + " %" }
+  return { Porcentaje_de_personajes_con_las_características_seleccionadas: representation_percentage + " %" }
 };
 
 window.filterData = filterData;
