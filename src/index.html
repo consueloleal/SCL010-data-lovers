@@ -6,23 +6,19 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width", user-escalable="no", initial-scale="1.0", maximun-scale="1.0", minimun-scale="1.0">
   </head>
-  
   <body>
     <div id="RICKANDMORTY" class="container">
-       
       <header class="header">
         <img class ="logo" src="http://www.imagenonline.com/imagenes/1/1164-746f68750ce566d4bb1bf593e0bc37549bb3ad81.png" style="max-width:auto;height:auto;">
         <div class="texto-principal">
-        <h2>Conoce a los personajes favoritos de la serie</h2> 
+        <h2>Conoce a los personajes favoritos de la serie</h2>
         </div>
-        
         <nav class="filters">
           <select name="name" id="filterOrden" class="filters">
             <option value="Normal">Orden</option>
             <option value="a-z">A-Z</option>
             <option value="z-a">Z-A</option>
           </select>
-            
           <select name="gender" id="filterGender" class="filters">
             <option value="All">Género</option>
             <option value="Male">Male</option>
@@ -45,12 +41,10 @@
             <option value="Disease">Enfermedad</option>
             <option value="Parasite">Parásito</option>
           </select>
-
-          <button name="calculos" id="calculations" class="filters">
-          <option value="calculo">Cálculos</option>
-          </button>
-  
-
+          <FORM>
+            <input name="calculos" type="button" value="Cálculo" class="filters" 
+            onclick='alert("Hola, acá podras obtener métricas (%) de los personajes de la serie, por género, especie y por ambos inclusive. Ejemplo: Si quieres conocer el porcentaje de personajes con las características de género Humano (Human) y especie Alien, entonces los seleccionamos y el resultado debería ser un 17%")'/>
+          </FORM>
         </nav>
       </header>
       <div id="stats" class="row"></div>
@@ -58,12 +52,10 @@
         <!--Aca se colocaran las 6 tarjetas con los personajes principales: Rick, Morty, Squanchy, Summer, Beth y Jerry-->
         <div class="items">
           <div id="result" class="tarjetas"></div>
-          
           <!-- <div id="resultsOrden"></div> -->
           <!--Con "navegation" pretendemos crear varias paginas para que se vean todas las tarjetas de los personajes-->
           <nav class="navegation"></nav>
-        </div>   
-        
+        </div>
         <!--En este box colocaremos un Gif de la serie y música (Theme song), para darle movimiento y sonido-->
         <aside class="aside">
           <div class="gif" >
@@ -83,20 +75,13 @@
           </audio controls>
           </div>
         </aside>
-        
       </section>
-    
       <footer class="footer">
       <nav class="pie">2019 Copyright CA Designs</nav>
       </footer>
-
     </div>
-   
-   
    <script src="./data/rickandmorty/rickandmorty.js"></script>
    <script src="data.js"></script>
    <script src="main.js"></script>
-   
-
   </body>
 </html>

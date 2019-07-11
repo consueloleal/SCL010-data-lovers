@@ -1,20 +1,8 @@
-/* Manejo de data */
-
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-/*const example = () => {
-  return 'example';
-};
-
-window.example = example;
-*/
-
-const rymData = RICKANDMORTY.results; 
+/* Manejo de data */ 
 
 const filterData = (data, condition) => {
   for (var key in condition) {
-    
+
     if (condition[key] === "All")
       delete condition[key]
   }
@@ -29,10 +17,10 @@ const filterData = (data, condition) => {
 };
 
 const sortData = (data, sortBy, sortOrder) => {
-  
-  let ordenaPersonaje = data;
+
+  let sortCharacter = data;
   if (sortOrder == "a-z"){
-    ordenaPersonaje.sort((a,b)=> {
+    sortCharacter.sort((a,b)=> {
       if (a[sortBy] < b[sortBy]) {return -1;}
       if (a[sortBy] > b[sortBy]) {return  1;}
       return 0;
@@ -40,21 +28,19 @@ const sortData = (data, sortBy, sortOrder) => {
   }
 
   if (sortOrder == "z-a"){
-    ordenaPersonaje.sort((a,b)=> {
+    sortCharacter.sort((a,b)=>{
       if (a[sortBy] > b[sortBy]) {return -1;}
       if (a[sortBy] < b[sortBy]) {return  1;}
       return 0;
     })
   }
-  return ordenaPersonaje;
+  return sortCharacter;
 };
 
 const computeStats = (data) => {
-  
-  // con esto se obtienen las especies y generos, lo cual podría servir para calcular
-  // el porcentaje de cada tipo de acuerdo a lo que se está mostrando (ya sea si se filtra o no)
-  var species = data.map(character => character["species"])
-  var gender  = data.map(character => character["gender"])
+  let representation_percentage = (data.length * 100 / rymData.length).toFixed(0)
+
+  return { Porcentaje_de_personajes_con_las_características_seleccionadas: representation_percentage + " %" }
 };
 
 window.filterData = filterData;
