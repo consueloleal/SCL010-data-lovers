@@ -1,7 +1,7 @@
 /* Manejo de data */
 const filterData = (data, condition) => {
   for (var key in condition) {
-    
+
     if (condition[key] === "All")
       delete condition[key]
   }
@@ -16,7 +16,7 @@ const filterData = (data, condition) => {
 };
 
 const sortData = (data, sortBy, sortOrder) => {
-  
+
   let sortCharacter = data;
   if (sortOrder == "a-z"){
     sortCharacter.sort((a,b)=> {
@@ -36,11 +36,12 @@ const sortData = (data, sortBy, sortOrder) => {
   return sortCharacter;
 };
 
-//const computeStats = (data) => {
-// con esto se obtienen las especies y generos, lo cual podría servir para calcular
-// el porcentaje de cada tipo de acuerdo a lo que se está mostrando (ya sea si se filtra o no)
-//};
+const computeStats = (data) => {
+  representation_percentage = (data.length * 100 / rymData.length).toFixed(0)
+
+  return { Representación_de_población_total: representation_percentage + " %" }
+};
 
 window.filterData = filterData;
 window.sortData = sortData;
-//window.computeStats = computeStats;
+window.computeStats = computeStats;
