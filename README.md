@@ -1,5 +1,5 @@
 # **Data Lovers - Rick y Morty**
-![Logo](multimedia/Titulo-Rick-y-Morty.png)
+![Logo](http://www.imagenonline.com/imagenes/1/1411-f2a38da7d107e7d9ea8f530f54f12e95e3fe5452.png)
 ![Gif](multimedia/giphy.gif)
 
  _Desarrolladoras: **Consuelo Leal** y **Ana Valera**._
@@ -9,14 +9,10 @@
 ## **Índice**
 
 * [Resumen del proyecto](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
+* [Fases de desarrollo del proyecto](#Fases-de-desarrollo-del-proyecto)
+* [Implementación de la Interfaz de Usuario (HTML/CSS/JS)](#Implementación-de-la-Interfaz-de-Usuario-(HTML/CSS/JS))
+* [Pruebas Unitarias](#pruebas-unitarias)
+* [Heurísticas de usabilidad](#Heurísticas-de-usabilidad)
 
 ***
 
@@ -42,12 +38,13 @@ La aplicación, se diseñó pensando en el usuario final, por lo que ofrece:
   - Adaptabilidad o visualización en distintos dispositivos. 
 
 
-## **2. Fases de desarrollo de la aplicación**
+## **2. Fases de desarrollo del proyecto**
 
 ### **2.1. Trello**
+Esta herramienta de gestión, nos permitió programar y darle seguimiento a cada una de las actividades del proyecto, a fin de cumplir con el objetivo pautado.
 ![](http://www.imagenonline.com/imagenes/1/1372-1bb081b1cf42353699c437ae02abec97b232ca05.jpg)
 
-Esta herramienta de gestión, nos permitió programar y darle seguimiento a cada una de las actividades del proyecto, a fin de cumplir con el objetivo pautado. 
+ 
 
 ### **2.2 Historias de usuario**
 
@@ -68,13 +65,26 @@ Una vez que definimos nuestro usuario y entendimos sus necesidades, escribimos l
 
 #### Prototipo de baja fidelidad
 
-Al principio del desarrollo de la aplicacion, realizamos varios sketches (bocetos) en papel y lápiz, planteándonos la solución para desarrollar la aplicación. El boceto resultante y que nos sirvió para realizar los test de usuarios, es el que se muestra a continuación:
+Al principio del desarrollo de la aplicacion, realizamos varios sketches (bocetos) en papel y lápiz, planteándonos la solución para desarrollar la aplicación. Los bocetos resultantes y que nos sirvieron para realizar los "Test de usuarios", son los que se muestran a continuación:
 
-![Prototipo baja fidelidad]()
+![Prototipo baja fidelidad](http://www.imagenonline.com/imagenes/1/1385-72eb8f15e3890344b67f3598c7059a2050f1b114.jpg)
+
+![Prototipo baja fidelidad](http://www.imagenonline.com/imagenes/1/1386-514d7f4e561c93a096f4c30768140a403a037346.jpg)
+
+![Prototipo baja fidelidad](http://www.imagenonline.com/imagenes/1/1387-8203cf4b939f0c1a946449302e9b474029a91c87.jpg)
+
+![Prototipo baja fidelidad](http://www.imagenonline.com/imagenes/1/1389-56505c72a1b01f15104ee7d4225521d752584925.jpg)
+
+
+
 
 #### Prototipo de alta fidelidad
 
-Para esta etapa, empleamos la herramienta *Figma*, el cual nos permitió diseñar el prototipo que representa nuestro _ideal_ de solución y que sigue con los fundamentos de _visual design_. En este sentido, el prototipo para los diversos formatos son los que se muestran más adelante. 
+Para esta etapa, primero definimos la _paleta de colores_ y el tipo de _tipografía_ a emplear en la aplicación. De aquí que guíandonos por la escenografía de la serie, decidimos emplear colores en tonos pasteles (blancos, azules, grises y turquesa).  Y una tipografía sencilla tipo Helvetica/Arial/Sans-serif que también va acorde también con la misma.  
+
+![Paleta de colores](http://www.imagenonline.com/imagenes/1/1390-8d80fa78f35b263445762dcb129ff2a6ea20bc4e.jpg)
+
+Una vez definido los colores y tipografía, empleamos la herramienta *Figma*, el cual nos permitió diseñar el prototipo que representa nuestro _ideal_ de solución y que sigue con los fundamentos de _visual design_. En este sentido, el prototipo para los diversos formatos son los que se muestran más adelante. 
 
 ![FigmaMobile](http://www.imagenonline.com/imagenes/1/1377-8a180f8827fca9aac07db535911bb077b38e6c10.jpg)
 
@@ -82,22 +92,22 @@ Para esta etapa, empleamos la herramienta *Figma*, el cual nos permitió diseña
 ![FigmaLaptop]()
 
 
-OJO OJO OJO
-También, deberás exportar
-tu diseño a [Zeplin](https://zeplin.io/) y utilizar las especificaciones de
-estilo que te dé Zeplin al momento de implementar tus diseños en código.
-
 #### Testeos de usabilidad
 
 Realizamos varios tests con usuarios, empleando y mostrando el prototipo de baja fidelidad, en dos locaciones distintas:
 - Un parque al aire libre.
 - Un área de juegos de un mall de la ciudad.
 
-Ambas experiencias, resultaron sumamente enriquecedoras, tanto en el ámbito personal como técnico, por cuanto tuvimos que romper _"barreras de miedo"_ al abordar a personas desconocidas y mostrarles nuestras propuestas; así como, saber oir y respetar aquellas opiniones que no nos gustaron mucho al principio, pero que en definitiva aportaron mejoras a la aplicación. Cabe destacar, que aunque alcanzamos a grabar vídeos de algunos test, muchas personas manifestaban resistencia a la misma, razón por la cual, sólo mostraremos algunos vídeos de los test realizados.
+Ambas experiencias, resultaron sumamente enriquecedoras, tanto en el ámbito personal como técnico, por cuanto tuvimos que romper _"barreras de miedo"_ al abordar a personas desconocidas y mostrarles nuestras propuestas; así como, saber escuchar y respetar aquellas opiniones que no nos gustaron mucho al principio, pero que en definitiva aportaron mejoras a la aplicación. Cabe destacar, que aunque alcanzamos a grabar vídeos de algunos test, muchas personas manifestaban resistencia a la misma, razón por la cual, sólo mostraremos algunos vídeos de los test realizados.
 
-<iframe width="500" heigth="315" src="https://www.youtube.com/watch?v=xRzjs36E3ms&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+*Vídeos Testeos* 
+(Hacer click en los links para ver los vídeos en YouTube)
 
+[Video Test1](https://youtu.be/xRzjs36E3ms)
 
+[Video Test2](https://youtu.be/u6o_s3NeoTY)
+
+[Video Test3](https://youtu.be/wc978JCR44Q)
 
 En resumen, los *problemas detectados* durante el testeo fueron:
   - Dificultad para entender de que se trataba la aplicación (¿No sabían qué hacer?).
@@ -119,6 +129,8 @@ Es así como, la *aplicación ofrece:*
 5. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
    tablets y desktops.
 
+
+El resultado (PrtScr) de la aplicación es la que se muestra a continuación:
 ![Imagen PrtScr de la aplicacion](http://www.imagenonline.com/imagenes/1/1374-93cb85f94a23853752dce4930f64cd63c9dfe58a.jpg)   
 
 
@@ -154,35 +166,18 @@ El archivo `src/data.js` tiene que tener una cobertura del 70% de _statements_
 
 
 ## **5. Heurísticas de usabilidad**
-Donde se trató de ajustar ésta aplicación, a los principios básicos de diseño visual. Resultando los siguientes:
+Revisando el diseño implementando bajo las heurísticas de usabilidad, encontramos que cumple se cumple con la mayoría de los aspectos revisados (Visibilidad del estado del sistema, empate entre el sistema y el mundo real, etc.). Sin embargo, nos dimos cuenta que no contamos con un "vínculo para volver a la página inicial" (aspecto correspondiente al Control y libertad para el usuario), el cual debería ser implementado de contar con más tiempo para el desarrollo. 
+
+
+Resultado del Test Heurística de Usabilidad de la aplicación:
 
 ![Evaluacion Heuristica Pag1](http://www.imagenonline.com/imagenes/1/1375-4ef5da48c29e4369f6f3a861a7f9cf895f009772.jpg)
 
 ![Evaluacion Heuristica Pag2](http://www.imagenonline.com/imagenes/1/1376-6176b36c8fd195300ccec61f5e33520f0f5b139f.jpg)
 
-
 ¡Gracias por su atención!
 _Las Desarrolladoras_
+C. Leal y A. Valera
 
 
 
-## **Checklist**
-
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
-* [ ] Pasa linter (`npm pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
