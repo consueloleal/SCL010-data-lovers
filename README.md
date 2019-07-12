@@ -41,6 +41,7 @@ La aplicación, se diseñó pensando en el usuario final, por lo que ofrece:
 ## *2. Fases de desarrollo del proyecto*
 
 ### *2.1. Trello*
+
 Esta herramienta de gestión, nos permitió programar y darle seguimiento a cada una de las actividades del proyecto, a fin de cumplir con el objetivo pautado.
 ![](http://www.imagenonline.com/imagenes/1/1372-1bb081b1cf42353699c437ae02abec97b232ca05.jpg)
 
@@ -102,6 +103,7 @@ Realizamos varios tests con usuarios, empleando y mostrando el prototipo de baja
 Ambas experiencias, resultaron sumamente enriquecedoras, tanto en el ámbito personal como técnico, por cuanto tuvimos que romper "barreras de miedo" al abordar a personas desconocidas y mostrarles nuestras propuestas; así como, saber escuchar y respetar aquellas opiniones que no nos gustaron mucho al principio, pero que en definitiva aportaron mejoras a la aplicación. Cabe destacar, que aunque alcanzamos a grabar vídeos de algunos test, muchas personas manifestaban resistencia a la misma, razón por la cual, sólo mostraremos algunos vídeos de los test realizados.
 
 Vídeos Testeos 
+
 (Hacer click en los links para ver los vídeos en YouTube)
 
 [Video Test1](https://youtu.be/xRzjs36E3ms)
@@ -145,6 +147,7 @@ Implementamos algunas pruebas siguiendo las recomendaciones indicadas en el proy
 
 
 ## *5. Heurísticas de usabilidad*
+
 Revisando el diseño implementando bajo las heurísticas de usabilidad, encontramos que cumple se cumple con la mayoría de los aspectos revisados (Visibilidad del estado del sistema, empate entre el sistema y el mundo real, etc.). Sin embargo, nos dimos cuenta que no contamos con un "vínculo para volver a la página inicial" (aspecto correspondiente al Control y libertad para el usuario), el cual debería ser implementado de contar con más tiempo para el desarrollo. 
 
 
@@ -155,6 +158,7 @@ Resultado del Test Heurística de Usabilidad de la aplicación:
 ![Evaluacion Heuristica Pag2](http://www.imagenonline.com/imagenes/1/1376-6176b36c8fd195300ccec61f5e33520f0f5b139f.jpg)
 
 ¡Gracias por su atención!
+
 Las Desarrolladoras
 C. Leal y A. Valera
 Julio 2019
