@@ -14,8 +14,6 @@
 * [Pruebas Unitarias](#pruebas-unitarias)
 * [Heurísticas de usabilidad](#Heurísticas-de-usabilidad)
 
-*
-
 ## *1. Resumen del proyecto*
 
 La serie *RICK AND MORTY* ha sido aclamada a nivel mundial por su originalidad, humor y creatividad. Es una animación de ciencia ficción para adultos creada, producida y escrita por Justin Roiland y Dan Harmon. La serie sigue las desventuras de un científico (Rick Sánchez), y su fácilmente influenciable nieto (Morty Smith), quienes pasan el tiempo entre la vida doméstica y los viajes espaciales intergalácticos. Bajo este escenario, se muestran un sin fin de personajes (493 en total) y éstos a su vez se logran ubicar en distintos géneros (femenino, masculino, desconocido y sin género) y especies (humano, animal, alien, humanoide, robot, parásito, entre otros). 
@@ -51,7 +49,10 @@ Esta herramienta de gestión, nos permitió programar y darle seguimiento a cada
 
 Definición de usuarios:
 
-Para desarrollar la aplicación, primordialmente definimos quienes serían nuestros usuarios, sus objetivos, los datos relevantes y cuando usarían el producto. Por lo que definimos que:
+Para desarrollar la aplicación, primordialmente definimos quienes serían nuestros usuarios, sus objetivos, los datos relevantes y cuando usarían el producto atravez de una encuesta online:
+
+[Video Test3](https://docs.google.com/forms/d/e/1FAIpQLSfr1I3j8Xoe11e-ePj05Z_xrppFnJDARpwrvg42bpX5w3hAmQ/viewform?usp=sf_link)
+
 - Usuarios principales del producto: Personas >= 16 años.
 - Objetivos de éstos usuarios en relación al producto: Diversión y conocer las características de los personajes de la serie.
 - Los datos relevantes que quieren ver: Imagen, nombre, género y especie de los personajes.
@@ -157,7 +158,30 @@ Resultado del Test Heurística de Usabilidad de la aplicación:
 
 ![Evaluacion Heuristica Pag2](http://www.imagenonline.com/imagenes/1/1376-6176b36c8fd195300ccec61f5e33520f0f5b139f.jpg)
 
-¡Gracias por su atención!
+## *6. Iteración
+
+En la iteración de nuestra página quisimos apuntar a integrar más a los usuarios y por eso realizamos pruebas nuevamente con ellos, estas pruebas las hicimos en un mall de la ciudad, las personas que participaron fueron hombres y mujeres de entre 23 hasta 31 años.
+
+Vídeos Testeos 
+
+(Hacer click en los links para ver los vídeos en YouTube)
+
+[Video Test 1](https://youtu.be/VOJ95fjTgNg)
+
+[Video Test 2](https://youtu.be/5CFwhy2ArKc)
+
+[Video Test 3](https://youtu.be/EFrxqAtnMrw)
+
+[Video Test 4](https://youtu.be/AhkDRjEOYJg)
+
+[Video Test 5](https://youtu.be/FrNOQ6SbDYc)
+
+Si bien los usuarios no mostraron mayor complicación al navegar por nuestra página, varios de ellos comentaron que debía tener más interactividad, al igual que nosotras notamos que teníamos que preparar mejor las entrevistas, como por ejemplo:
+
+- Verificar nuestros materiales y herramientas antes de comenzar.
+- Hacer más simples y descriptivas las preguntas.
+
+En conclusión, creemos que efectuar pruebas con usuarios en las distintas etapas del proyecto, nos a ayuda a cumplir con sus necesidades y mejorar el desarrollo progresivamente.
 
 Las Desarrolladoras
 C. Leal y A. Valera
